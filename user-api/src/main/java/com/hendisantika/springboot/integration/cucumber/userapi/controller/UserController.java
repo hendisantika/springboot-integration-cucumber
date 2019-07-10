@@ -49,4 +49,13 @@ public class UserController {
     public ResponseEntity<?> deleteUserExceptDefaultData() {
         return new ResponseEntity<>(userService.removeUserExceptDefaultData(), HttpStatus.NO_CONTENT);
     }
+
+    @GetMapping(value = {"/users/{id}"})
+    public ResponseEntity<?> getUserById(@ApiParam(value = "id", required = true) @PathVariable("id") long id) {
+        User user = this.userService.findUserById(id);
+        if (user == null) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        return new ResponseEntity<>(user, HttpStatus.OK);
+    }
 }
