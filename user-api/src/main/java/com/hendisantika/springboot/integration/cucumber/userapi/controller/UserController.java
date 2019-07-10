@@ -44,4 +44,9 @@ public class UserController {
         userService.addUser(user);
         return new ResponseEntity<>(true, HttpStatus.CREATED);
     }
+
+    @DeleteMapping("/")
+    public ResponseEntity<?> deleteUserExceptDefaultData() {
+        return new ResponseEntity<>(userService.removeUserExceptDefaultData(), HttpStatus.NO_CONTENT);
+    }
 }
