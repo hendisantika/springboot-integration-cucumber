@@ -33,4 +33,10 @@ public class UserController {
         List<User> users = userService.getUsers();
         return new ResponseEntity<>(users, HttpStatus.OK);
     }
+
+    @GetMapping(value = {"/usersExceptDefault"})
+    public ResponseEntity<?> getUsersExceptDefault() {
+        List<User> users = this.userService.getUsersExceptDefault();
+        return new ResponseEntity<>(users, HttpStatus.OK);
+    }
 }
