@@ -20,7 +20,7 @@
 
     <modules>
         <!--        <module>UserApiTesting</module>-->
-        <module>UserApi</module>
+        <module>user-api</module>
     </modules>
 
     <dependencies>
