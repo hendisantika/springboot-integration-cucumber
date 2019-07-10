@@ -2,13 +2,12 @@ package com.hendisantika.springboot.integration.cucumber.userapi.controller;
 
 import com.hendisantika.springboot.integration.cucumber.userapi.domain.User;
 import com.hendisantika.springboot.integration.cucumber.userapi.service.UserService;
+import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -38,5 +37,11 @@ public class UserController {
     public ResponseEntity<?> getUsersExceptDefault() {
         List<User> users = this.userService.getUsersExceptDefault();
         return new ResponseEntity<>(users, HttpStatus.OK);
+    }
+
+    @PostMapping("/")
+    public ResponseEntity<?> postUsers(@ApiParam(value = "User", required = true) @RequestBody User user) {
+        userService.addUser(user);
+        return new ResponseEntity<>(true, HttpStatus.CREATED);
     }
 }
