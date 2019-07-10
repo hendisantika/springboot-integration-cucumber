@@ -26,15 +26,14 @@ public class UserService {
 
         users = new ArrayList<>();
         User user1 = new User(++i);
-        user1.setFirstName("Nikita");
-        user1.setLastName("Master");
-        user1.setState("California");
+        user1.setFirstName("Uzumaki");
+        user1.setLastName("Naruto");
+        user1.setState("Konohagakure");
 
         User user2 = new User(++i);
-        user2.setFirstName("Sabin");
-        user2.setLastName("Branch");
-        user2.setState("California");
-        users.add(user1);
+        user2.setFirstName("Hatake");
+        user2.setLastName("Kakashi");
+        user2.setState("Konohagakure");
         users.add(user2);
     }
 
