@@ -1,7 +1,6 @@
 package com.hendisantika.springboot.integration.cucumber.userapi.domain;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 /**
  * Created by IntelliJ IDEA.
@@ -12,15 +11,15 @@ import lombok.Setter;
  * Date: 2019-07-11
  * Time: 06:45
  */
-@Getter
-@Setter
+@Data
 public class User {
     private Long id;
     private String firstName;
     private String lastName;
     private String state;
 
-    public User(){};
+    public User() {
+    }
 
     public User(long id) {
         this.id = id;

@@ -19,7 +19,7 @@
     </properties>
 
     <modules>
-        <!--        <module>UserApiTesting</module>-->
+        <module>user-api-testing</module>
         <module>user-api</module>
     </modules>
 
