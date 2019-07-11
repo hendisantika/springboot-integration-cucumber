@@ -1,4 +1,4 @@
-package com.hendisantika.springbootintegrationcucumber.userapitesting.dto;
+package com.hendisantika.springbootintegrationcucumber.userapitesting.rest.dto;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
