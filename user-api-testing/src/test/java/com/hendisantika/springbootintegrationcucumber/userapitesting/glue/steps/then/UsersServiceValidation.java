@@ -1,13 +1,18 @@
 package com.hendisantika.springbootintegrationcucumber.userapitesting.glue.steps.then;
 
 import com.hendisantika.springbootintegrationcucumber.userapitesting.glue.steps.given.Users;
+import com.hendisantika.springbootintegrationcucumber.userapitesting.glue.steps.when.UsersServiceCall;
 import com.hendisantika.springbootintegrationcucumber.userapitesting.rest.dto.UserDto;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.Then;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 
+import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
+
+import static org.junit.Assert.*;
 
 /**
  * Created by IntelliJ IDEA.
