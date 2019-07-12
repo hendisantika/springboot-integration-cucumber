@@ -1,4 +1,4 @@
-package com.hendisantika.springbootintegrationcucumber.userapitesting.glue.steps;
+package com.hendisantika.springbootintegrationcucumber.userapitesting.glue.steps.given;
 
 import cucumber.api.java.en.Given;
 

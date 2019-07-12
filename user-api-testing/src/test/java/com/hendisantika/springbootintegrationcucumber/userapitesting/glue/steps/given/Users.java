@@ -1,4 +1,4 @@
-package com.hendisantika.springbootintegrationcucumber.userapitesting.glue.steps;
+package com.hendisantika.springbootintegrationcucumber.userapitesting.glue.steps.given;
 
 import com.hendisantika.springbootintegrationcucumber.userapitesting.rest.dto.UserDto;
 import com.hendisantika.springbootintegrationcucumber.userapitesting.rest.resource.UserApiResource;
